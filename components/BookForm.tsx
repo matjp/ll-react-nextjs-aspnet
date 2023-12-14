@@ -17,7 +17,7 @@ export default function BookForm( { formName, formValue, disabled, reload, setRe
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' }
       };
-      fetch(`https://localhost:7094/books/${formName}/${formValue}`, requestOptions).then(() => {
+      fetch(`http://localhost:7094/books/${formName}/${formValue}`, requestOptions).then(() => {
         setReload(!reload);
       });
   }

@@ -16,7 +16,7 @@ export default function BookGrid( { formName } : BookGridProps ) {
 
   useEffect(() => {
     async function getBooks(borrowed: Number) {
-      const res = await fetch(`https://localhost:7094/books/${borrowed}`)
+      const res = await fetch(`http://localhost:7094/books/${borrowed}`)
       if (!res.ok) {
         throw new Error('Failed to fetch Books data')
       }
