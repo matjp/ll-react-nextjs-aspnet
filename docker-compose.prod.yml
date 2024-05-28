@@ -1,8 +1,5 @@
-version: '3'
-
 services:
   next-app:
-    container_name: next-app
     build:
       context: .
       dockerfile: prod.Dockerfile
@@ -10,16 +7,11 @@ services:
     ports:
       - 3000:3000
 
-  express-server:
-    container_name: express-server
-    build:
-      context: .
-      dockerfile: prod.express.Dockerfile
-    env_file:
-     - .env
-    restart: always
+  aspnetserver:
+    image: matjpdh/ll-aspnet-server:latest
+    restart: always    
     ports:
-      - 3001:3001
+      - 7094:7094
 
   db:
     image: matjpdh/lldb:1.0

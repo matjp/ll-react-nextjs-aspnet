@@ -13,7 +13,10 @@
   "dependencies": {
     "next": "13.5.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "autoprefixer": "^10"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.4",
@@ -23,13 +26,10 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "13.5.5",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "postcss": "^8",
-    "tailwindcss": "^3",
     "typescript": "^5"
   }
 }
